@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> Simple Calculator </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<script src="myscript.js">
+            
+	</script>
+	<div class="simpleCalculator">
+		<form name="form">
+		<div class="display">
+			<input type="text" placeholder="0" name="displayResult" />
+		</div>
+			<div class="buttons">
+				
+				<div class="row">
+                    <input type="button" name="addb" value="+" onClick="getResult(addb.value)">
+                    <input type="button" name="subb" value="-" onClick="getResult(subb.value)">
+                    <input type="button" name="mulb" value="*" onClick="getResult(mulb.value)">
+                    <input type="button" name="divb" value="/" onClick="getResult(divb.value)">
+				</div>
+
+                <div class="row">
+                    <input type="button" name="b1" value="1" onClick="getResult(b1.value)">
+                    <input type="button" name="b2" value="2" onClick="getResult(b2.value)">
+                    <input type="button" name="b3" value="3" onClick="getResult(b3.value)">
+                    <input type="button" name="b4" value="4" onClick="getResult(b4.value)">    
+                </div>
+                
+                <div class="row">
+                    <input type="button" name="b5" value="5" onClick="getResult(b5.value)">
+                    <input type="button" name="b6" value="6" onClick="getResult(b6.value)">
+                    <input type="button" name="b7" value="7" onClick="getResult(b7.value)">
+                    <input type="button" name="b8" value="8" onClick="getResult(b8.value)"> 
+                </div>
+				
+                <div class="row">
+                    <input type="button" name="b9" value="9" onClick="getResult(b9.value)"> 
+				    <input type="button" name="b0" value="0" onClick="getResult(b0.value)">
+				    <input type="button" name="potb" value="." onClick="getResult(potb.value)">
+                    <input type="button" id="keys" value="&larr;"  onclick="backspace()">
+				    <input type="button" id="equals" value="=" onClick="displayResult.value=eval(displayResult.value)">
+				</div>
+			</div>
+		
+		</form>
+	</div>
+</body>
+	
+</html>
